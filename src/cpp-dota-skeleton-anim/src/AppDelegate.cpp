@@ -3,6 +3,37 @@
 
 USING_NS_CC;
 
+#if CC_TARGET_PLATFORM==CC_PLATFORM_WIN32
+static inline std::string ConvertPathFormatToUnixStyle(const std::string& path)
+{
+	std::string ret = path;
+	int len = ret.length();
+	for (int i = 0; i < len; ++i)
+	{
+		if (ret[i] == '\\')
+		{
+			ret[i] = '/';
+		}
+	}
+	return ret;
+}
+
+static std::string GetCurrentDirectory()
+{
+	char current_directory[MAX_PATH];
+	::GetCurrentDirectoryA(MAX_PATH, current_directory);
+	return ConvertPathFormatToUnixStyle(std::string(current_directory) + "/");
+}
+static void SetDefaultDirectory(){
+	FileUtils::getInstance()->setDefaultResourceRootPath(GetCurrentDirectory());
+	{
+		std::vector<std::string> searchPaths;
+		searchPaths.push_back(GetCurrentDirectory());
+		FileUtils::getInstance()->setSearchPaths(searchPaths);
+	}
+}
+#endif //  CC_TARGET_PLATFORM==CC_PLATFORM_WIN32
+
 AppDelegate::AppDelegate() {
 
 }
@@ -23,6 +54,10 @@ void AppDelegate::initGLContextAttrs()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
+
+#if CC_TARGET_PLATFORM==CC_PLATFORM_WIN32
+	SetDefaultDirectory();
+#endif
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();

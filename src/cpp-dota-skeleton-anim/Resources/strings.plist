@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>data</key>
+    <dict>
+      <key>fontname</key>
+      <string>宋体</string>
+      <key>tips</key>
+      <string>提示：按左右箭头切换特效，按空格键切换动画</string>
+      <key>cur_effect</key>
+      <string>当前特效：</string>
+      <key>cur_anim</key>
+      <string>当前动画：</string>
+      <key>author</key>
+      <string>作者：倚天(43156150)</string>
+      <key>email</key>
+      <string>邮箱：zym2014#gmail.com</string>
+      <key>blog</key>
+      <string>博客：blog.csdn.net/zym_123456</string>
+    </dict>
+    <key>metadata</key>
+    <dict>
+      <key>format</key>
+      <integer>1</integer>
+    </dict>
+  </dict>
+</plist>

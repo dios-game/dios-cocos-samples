@@ -1,8 +1,8 @@
 #include "MainScene.h"
 #include "Utils.h"
 #include "SimpleAudioEngine.h"
-#include "external/tinyxml2/tinyxml2.h"
-#include "DotaAnimParser/DBCCFactoryEx.h"
+#include "tinyxml2/tinyxml2.h"
+#include "DBCCFactoryEx.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -109,7 +109,7 @@ void MainScene::menuCloseCallback(Ref* pSender)
 // Ìí¼ÓÊÂ¼þ¼àÌýÆ÷
 void MainScene::addEventListener()
 {
-	// Ìí¼Ó´¥ÃþÊÂ¼þ¼àÌýÆ÷
+	// Ìí¼Ó´¥ÃþÊÂ¼þ¼àÌýÆ÷;
 	EventListenerTouchOneByOne* touchListener = EventListenerTouchOneByOne::create();
 	touchListener->onTouchBegan = CC_CALLBACK_2(MainScene::onTouchBegan, this);
 	touchListener->onTouchMoved = CC_CALLBACK_2(MainScene::onTouchMoved, this);
@@ -117,7 +117,7 @@ void MainScene::addEventListener()
 	touchListener->onTouchCancelled = CC_CALLBACK_2(MainScene::onTouchCancelled, this);
 	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
 
-	// Ìí¼Ó°´¼üÊÂ¼þ¼àÌýÆ÷
+	// Ìí¼Ó°´¼üÊÂ¼þ¼àÌýÆ÷;
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 || CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
 	_keyboardListener = cocos2d::EventListenerKeyboard::create();
 	_keyboardListener->onKeyPressed = CC_CALLBACK_2(MainScene::keyPressHandler, this);

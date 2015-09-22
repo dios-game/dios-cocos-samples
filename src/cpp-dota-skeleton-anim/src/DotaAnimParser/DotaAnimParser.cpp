@@ -411,7 +411,7 @@ DragonBonesData* DotaAnimParser::parseDragonBonesData(
 		AnimationData *animationData = new AnimationData();
 		animationData->name = dotaAnimData->name;
 		animationData->frameRate = _frameRate;
-		animationData->duration = (int)(round((int)dotaAnimData->frameDataList.size() * 1000.f / _frameRate));
+		animationData->duration = (int)(std::round((int)dotaAnimData->frameDataList.size() * 1000.f / _frameRate));
 		animationData->playTimes = 0;
 		animationData->fadeTime = 0.f;	//0.3f;
 		animationData->scale = 1;
@@ -827,7 +827,7 @@ void DotaAnimParser::getTimelineTransform(const TransformTimeline *timeline, int
 TransformFrame * DotaAnimParser::newBlankKeyframes(int duration, const std::string& sound)
 {
 	TransformFrame *frame = new TransformFrame();
-	frame->duration = (int)(round(duration * 1000.f / _frameRate));
+	frame->duration = (int)(std::round(duration * 1000.f / _frameRate));
 	if (!sound.empty())
 		frame->sound = sound;
 
@@ -853,7 +853,7 @@ TransformFrame * DotaAnimParser::newKeyframes(int zOrder, unsigned char opacity,
 											  const std::string& sound)
 {
 	TransformFrame *frame = new TransformFrame();
-	frame->duration = (int)(round(1 * 1000.f / _frameRate));
+	frame->duration = (int)(std::round(1 * 1000.f / _frameRate));
 	if (!sound.empty())
 		frame->sound = sound;
 
