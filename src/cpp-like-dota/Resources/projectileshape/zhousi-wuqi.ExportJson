@@ -1,0 +1,129 @@
+{
+  "content_scale": 1.0,
+  "armature_data": [
+    {
+      "strVersion": "1.6.0.0",
+      "version": 1.6,
+      "name": "zhousi-wuqi",
+      "bone_data": [
+        {
+          "name": "Rwuqi",
+          "parent": "",
+          "dI": 0,
+          "x": -54.539070129394531,
+          "y": 37.6983757019043,
+          "z": 1,
+          "cX": 0.3,
+          "cY": 0.3,
+          "kX": 0.2551824,
+          "kY": -0.2551824,
+          "arrow_x": 95.078910827636719,
+          "arrow_y": 1.034117303788662E-06,
+          "effectbyskeleton": true,
+          "bl": 95,
+          "display_data": [
+            {
+              "name": "chai/Rwuqi.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 66.00832,
+                  "y": -3.449768,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -0.255179048,
+                  "kY": 0.255181462
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animation_data": [
+    {
+      "name": "zhousi-wuqi",
+      "mov_data": [
+        {
+          "name": "atk3",
+          "dr": 5,
+          "lp": true,
+          "to": 0,
+          "drTW": 0,
+          "twE": 0,
+          "sc": 0.166666672,
+          "mov_bone_data": [
+            {
+              "name": "Rwuqi",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 18.695655822753906,
+                  "y": -25.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": 18.0,
+                  "y": -25.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0162799153,
+                  "kY": -0.0162799153,
+                  "fi": 2,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": 18.0,
+                  "y": -25.0,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0,
+                  "fi": 4,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "texture_data": [
+    {
+      "name": "chai/Rwuqi",
+      "width": 230.0,
+      "height": 173.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    }
+  ],
+  "config_file_path": [
+    "zhousi-wuqi0.plist"
+  ],
+  "config_png_path": [
+    "zhousi-wuqi0.png"
+  ]
+}

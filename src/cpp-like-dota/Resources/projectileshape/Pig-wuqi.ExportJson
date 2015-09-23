@@ -1,0 +1,129 @@
+{
+  "content_scale": 0.2,
+  "armature_data": [
+    {
+      "strVersion": "1.6.0.0",
+      "version": 1.6,
+      "name": "Pig-wuqi",
+      "bone_data": [
+        {
+          "name": "Layer1",
+          "parent": "",
+          "dI": 0,
+          "x": 13.45451831817627,
+          "y": 30.574100494384766,
+          "z": 1,
+          "cX": 0.089546226,
+          "cY": 0.089546226,
+          "kX": 0.0,
+          "kY": 0.0,
+          "arrow_x": 0.0,
+          "arrow_y": 0.0,
+          "effectbyskeleton": false,
+          "bl": 0,
+          "display_data": [
+            {
+              "name": "Pig/xiaobiLdao.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animation_data": [
+    {
+      "name": "Pig-wuqi",
+      "mov_data": [
+        {
+          "name": "atk2",
+          "dr": 5,
+          "lp": true,
+          "to": 0,
+          "drTW": 0,
+          "twE": 0,
+          "sc": 0.2,
+          "mov_bone_data": [
+            {
+              "name": "Layer1",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": -13.799997329711914,
+                  "y": -30.799999237060547,
+                  "z": 0,
+                  "cX": 0.9848115,
+                  "cY": 0.9848115,
+                  "kX": 0.91775316,
+                  "kY": -0.91775316,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": -13.799997329711914,
+                  "y": -30.0,
+                  "z": 0,
+                  "cX": 0.9848115,
+                  "cY": 0.9848115,
+                  "kX": 4.09060526,
+                  "kY": -4.09060526,
+                  "fi": 1,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                },
+                {
+                  "dI": 0,
+                  "x": -13.799997329711914,
+                  "y": -30.0,
+                  "z": 0,
+                  "cX": 0.9848115,
+                  "cY": 0.9848115,
+                  "kX": 13.6091614,
+                  "kY": -13.6091614,
+                  "fi": 4,
+                  "twE": 0,
+                  "tweenFrame": true,
+                  "bd_src": 1,
+                  "bd_dst": 771
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "texture_data": [
+    {
+      "name": "Pig/xiaobiLdao",
+      "width": 477.0,
+      "height": 685.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    }
+  ],
+  "config_file_path": [
+    "Pig-wuqi0.plist"
+  ],
+  "config_png_path": [
+    "Pig-wuqi0.png"
+  ]
+}

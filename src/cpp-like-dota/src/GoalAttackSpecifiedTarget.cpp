@@ -1,0 +1,72 @@
+#include "GoalAttackSpecifiedTarget.h"
+#include "EntityManager.h"
+#include "GoalPursuitTarget.h"
+#include "GameTeam.h"
+
+GoalAttackSpecifiedTarget::GoalAttackSpecifiedTarget( GameCharacter* owner, int targetId, int targetTeamId )
+    :GoalComposite<GameCharacter>(owner)
+{
+    m_targetId      =   targetId;
+    m_targetTeamId  =   targetTeamId;
+}
+
+void GoalAttackSpecifiedTarget::activate()
+{
+    m_pOwner->getWeaponControlSystem()->setAttackTarget(m_targetId);
+    // @_@ 更新一下武器系统的部分
+    m_pOwner->getWeaponControlSystem()->update();
+}
+
+GoalStateEnum GoalAttackSpecifiedTarget::process()
+{
+    activateIfInactive();
+
+    do 
+    {
+        // 如果设定目标已经不在了，就是该目标已经完成
+        if (!isTargetAlive())
+        {
+            m_goalState = completed;
+            break;
+        }
+
+        // 如果在攻击范围内，就直接使用武器系统发动攻击
+        if (isInAttackDistance())
+        {
+            removeAllSubgoals();
+            // 使用当前武器系统攻击
+            auto tmpCharacter   =   dynamic_cast<GameCharacter*>(EntityMgr->getEntityFromID(m_targetId));
+            m_pOwner->getWeaponControlSystem()->takeWeaponAndAttack(tmpCharacter);
+        }
+        else
+        {
+            // 否则就设定先追击该目标
+            if (m_subgoalList.empty())
+            {
+                addSubgoal(new GoalPursuitTarget(m_pOwner, m_targetId));
+            }
+        }
+
+        // 执行子目标，@_@ 这里的子目标是否完成并不代表该目标完成
+        processSubgoals();
+
+    } while (0);
+
+    return m_goalState;
+}
+
+bool GoalAttackSpecifiedTarget::isTargetAlive()
+{
+    /**
+    *	丢失目标的情况有除了角色死掉，就是角色已经离开原来的队伍 
+    */
+    auto tmpCharacter   =   dynamic_cast<GameCharacter*>(EntityMgr->getEntityFromID(m_targetId));
+    return tmpCharacter != nullptr && tmpCharacter->getTeam()->getTeamId() == m_targetTeamId && tmpCharacter->isAlive();
+}
+
+bool GoalAttackSpecifiedTarget::isInAttackDistance()
+{
+    // 这里需要根据当前的武器来判断是否在攻击范围内
+    auto tmpCharacter   =   dynamic_cast<GameCharacter*>(EntityMgr->getEntityFromID(m_targetId));
+    return m_pOwner->getWeaponControlSystem()->isInAttackRange(tmpCharacter);
+}

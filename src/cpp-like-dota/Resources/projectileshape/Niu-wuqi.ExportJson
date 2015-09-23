@@ -1,0 +1,109 @@
+{
+  "content_scale": 0.5,
+  "armature_data": [
+    {
+      "strVersion": "1.4.0.1",
+      "version": 1.401,
+      "name": "Niu-wuqi",
+      "bone_data": [
+        {
+          "name": "dun",
+          "parent": "",
+          "dI": 0,
+          "x": -45.770515441894531,
+          "y": 31.914892196655273,
+          "z": 1,
+          "cX": 0.16,
+          "cY": 0.16,
+          "kX": -0.07010341,
+          "kY": 0.07010341,
+          "arrow_x": 7.62939453125E-05,
+          "arrow_y": 1.2241998774698004E-05,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "Niu/dun.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": -34.666626,
+                  "y": 281.6668,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.0,
+                  "kY": 0.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animation_data": [
+    {
+      "name": "Niu-wuqi",
+      "mov_data": [
+        {
+          "name": "atk2",
+          "dr": 5,
+          "lp": true,
+          "to": 0,
+          "drTW": 0,
+          "twE": 0,
+          "sc": 0.2,
+          "mov_bone_data": [
+            {
+              "name": "dun",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 48.333335876464844,
+                  "y": 28.333328247070312,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.05384779,
+                  "kY": 2.05384779,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 48.333335876464844,
+                  "y": 28.333328247070312,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 10.2597752,
+                  "kY": -10.2597752,
+                  "fi": 4,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "texture_data": [
+    {
+      "name": "Niu/dun",
+      "width": 513.0,
+      "height": 1011.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    }
+  ],
+  "config_file_path": [
+    "Niu-wuqi0.plist"
+  ],
+  "config_png_path": [
+    "Niu-wuqi0.png"
+  ]
+}

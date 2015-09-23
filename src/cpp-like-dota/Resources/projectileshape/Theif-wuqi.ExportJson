@@ -1,0 +1,206 @@
+{
+  "content_scale": 0.5,
+  "armature_data": [
+    {
+      "strVersion": "1.4.0.1",
+      "version": 1.401,
+      "name": "Theif-wuqi",
+      "bone_data": [
+        {
+          "name": "Rwuqi",
+          "parent": "",
+          "dI": 0,
+          "x": 97.16998291015625,
+          "y": 196.357666015625,
+          "z": 2,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -0.9197197,
+          "kY": 0.9197197,
+          "arrow_x": 77.6492919921875,
+          "arrow_y": 1.93326995940879E-05,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "Theif/wuqiR.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 62.2531128,
+                  "y": -2.11669922,
+                  "cX": 1.00000012,
+                  "cY": 1.00000012,
+                  "kX": 0.919720352,
+                  "kY": -0.919718444
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lwuqi",
+          "parent": "",
+          "dI": 0,
+          "x": -127.01591491699219,
+          "y": 210.3492431640625,
+          "z": 1,
+          "cX": 1.0,
+          "cY": 1.0,
+          "kX": -0.8630197,
+          "kY": 0.8630197,
+          "arrow_x": 75.096267700195312,
+          "arrow_y": -1.1840907973237336E-05,
+          "effectbyskeleton": true,
+          "display_data": [
+            {
+              "name": "Theif/wuqiL.png",
+              "displayType": 0,
+              "skin_data": [
+                {
+                  "x": 49.2563171,
+                  "y": 0.340965271,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": 0.863018632,
+                  "kY": -0.863019347
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animation_data": [
+    {
+      "name": "Theif-wuqi",
+      "mov_data": [
+        {
+          "name": "atk2",
+          "dr": 5,
+          "lp": true,
+          "to": 0,
+          "drTW": 0,
+          "twE": 0,
+          "sc": 0.2,
+          "mov_bone_data": [
+            {
+              "name": "Rwuqi",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": -44.285728454589844,
+                  "y": 17.142852783203125,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.12457776,
+                  "kY": 2.12457776,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": -44.285728454589844,
+                  "y": 17.142852783203125,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.156061,
+                  "kY": 2.156061,
+                  "fi": 2,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": -44.285728454589844,
+                  "y": 17.142852783203125,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.12457776,
+                  "kY": 2.12457776,
+                  "fi": 4,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            },
+            {
+              "name": "Lwuqi",
+              "dl": 0.0,
+              "frame_data": [
+                {
+                  "dI": 0,
+                  "x": 131.42863464355469,
+                  "y": 24.285720825195312,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.197529,
+                  "kY": 2.197529,
+                  "fi": 0,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 131.42863464355469,
+                  "y": 24.285720825195312,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.26563,
+                  "kY": 2.26563,
+                  "fi": 2,
+                  "twE": 0,
+                  "tweenFrame": true
+                },
+                {
+                  "dI": 0,
+                  "x": 131.42863464355469,
+                  "y": 24.285720825195312,
+                  "z": 0,
+                  "cX": 1.0,
+                  "cY": 1.0,
+                  "kX": -2.197529,
+                  "kY": 2.197529,
+                  "fi": 4,
+                  "twE": 0,
+                  "tweenFrame": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "texture_data": [
+    {
+      "name": "Theif/wuqiL",
+      "width": 161.0,
+      "height": 160.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    },
+    {
+      "name": "Theif/wuqiR",
+      "width": 179.0,
+      "height": 207.0,
+      "pX": 0.5,
+      "pY": 0.5,
+      "plistFile": ""
+    }
+  ],
+  "config_file_path": [
+    "Theif-wuqi0.plist"
+  ],
+  "config_png_path": [
+    "Theif-wuqi0.png"
+  ]
+}
