@@ -1,4 +1,4 @@
 @echo off
 
-rem åŸºäºŽDxMæ¡†æž¶çš„å·¥ç¨‹åˆ›å»º
-call %~dp0\dios\build\create_module.bat
+rem »ùÓÚDxM¿ò¼ÜµÄ¹¤³Ì´´½¨
+call %~dp0\dios-cocos\dios\build\create_module.bat
